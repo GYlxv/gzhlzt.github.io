@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<title>搜索页_{dede:global.cfg_webname/}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/skin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/interface-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/{dede:global.color/}.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body class="scroll-assist" data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" data-reveal-timing="1000">
+        {dede:include filename="head.htm"/}
+        <div class="main-container transition--fade">
+            <section class="imagebg height-50">
+                <div class="background-image-holder background--bottom">
+                    <img alt="image" src="/skin/img/header2.jpg" />
+                </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h1>搜索结果页</h1>
+                            <p class="lead">{dede:global name='keyword' function='RemoveXSS(@me)'/}</p>
+                        </div>
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <section class="masonry-contained">
+                <div class="container">
+                    <div class="row">
+                        <div class="masonry">
+                            <div class="" style="margin-top:40px;">
+                             {dede:list perpage='20'}
+                                <div class="col-sm-12 masonry__item" data-masonry-filter="digital">
+                                    <a href="[field:arcurl/]" target="_blank">
+                                        <div class="card card--horizontal card-5">
+                                            
+                                            <div class="card__body  boxed boxed--lg bg--white ">
+                                                <div class="card__title">
+                                                    <h4>[field:title/]</h4>
+                                                </div>
+                                                <span>
+                                                    <em><small>分类：</small><a href="[field:typeurl/]" target="_blank">[field:typename/]</a>  
+						<small>点击：</small>[field:click/]  
+						<small>日期：</small>[field:stime/]</em>
+                                                </span>
+                                                <p>
+                                                 [field:description/]...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            {/dede:list}
+                            </div>
+                            <!--end masonry container-->
+                        </div>
+                    </div>
+                    <div class="fl dede_pages">
+			<ul class="pagelist">
+            	{dede:pagelist listsize='4'/}  
+			</ul>
+		</div><!-- /pages -->
+                </div>
+                <!--end of container-->
+            </section>
+        {dede:include filename="footer.htm"/}    
+       </div>
+        <script src="/skin/js/jquery-2.1.4.min.js"></script>
+        <script src="/skin/js/isotope.min.js"></script>
+        <script src="/skin/js/ytplayer.min.js"></script>
+        <script src="/skin/js/owl.carousel.min.js"></script>
+        <script src="/skin/js/lightbox.min.js"></script>
+        <script src="/skin/js/smooth-scroll.min.js"></script>
+        <script src="/skin/js/scrollreveal.min.js"></script>
+        <script src="/skin/js/parallax.js"></script>
+        <script src="/skin/js/scripts.js"></script>
+    </body>
+</html>

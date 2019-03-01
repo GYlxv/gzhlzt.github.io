@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" class="thumb img-hover"><img src="[field:picname/]" alt="[field:fulltitle/]" class="img-responsive" width="90" height="60" style="height:60px; width:90px;"/></a>

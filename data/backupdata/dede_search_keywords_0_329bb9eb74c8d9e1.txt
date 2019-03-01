@@ -1,0 +1,6 @@
+INSERT INTO `dede_search_keywords` VALUES('1','asdfasfsdfs','asdfasfsdfs asdfasfsdfs','3','0','1473423029','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','asfdasdf','asfdasdf asfdasdf','3','0','1473423116','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','adfasdfasd','adfasdfasd adfasdfasd','3','0','1473423380','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','adsfasdf','adsfasdf adsfasdf','1','0','1473423189','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','魔客吧','魔客吧 魔客','8','6','1473502915','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','asdfas','asdfas','1','0','1473502904','0','0');

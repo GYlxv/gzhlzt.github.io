@@ -1,0 +1,46 @@
+<?php
+$z[0]=Array("field","",49,68);
+$z[0][4]=array();
+$z[0][4]['name']="title";
+$z[1]=Array("global","",69,95);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",139,197);
+$z[2][4]=array();
+$z[2][4]['name']="description";
+$z[2][4]['function']="html2text(@me)";
+$z[3]=Array("global","",234,261);
+$z[3][4]=array();
+$z[3][4]['name']="cfg_keywords";
+$z[4]=Array("include","",1725,1760);
+$z[4][4]=array();
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("field","",2179,2208);
+$z[5][4]=array();
+$z[5][4]['name']="typename";
+$z[6]=Array("field","",2300,2329);
+$z[6][4]=array();
+$z[6][4]['name']="position";
+$z[7]=Array("list","\r\n                                <div class=\"sunhouse-item\">\r\n                                    <div class=\"wrapper-image\"><img src=\"[field:picname/]\" alt=\"[field:fulltitle/]\" class=\"img-responsive\"/>\r\n\r\n                                        <div class=\"note for-sale\"><p><span>[field:pubdate function=\"MyDate('d',@me)\"/]</span> [field:pubdate function=\"MyDate('M',@me)\"/]</p></div>\r\n                                    </div>\r\n                                    <div class=\"wrapper-content\">\r\n                                      \r\n                                        <div class=\"about-house\"><a href=\"[field:arcurl/]\" class=\"title\">[field:title/]</a>\r\n\r\n                                            <p class=\"text\">[field:infos/]...</p><a href=\"[field:arcurl/]\" class=\"btn btn-blue\">查看详情</a></div>\r\n                                    </div>\r\n                                </div>\r\n                             ",2700,3696);
+$z[7][4]=array();
+$z[7][4]['pagesize']="4";
+$z[7][4]['titlelen']="60";
+$z[7][4]['infolen']="200";
+$z[8]=Array("pagelist","",3885,3956);
+$z[8][4]=array();
+$z[8][4]['listitem']="info,index,end,pre,next,pageno";
+$z[8][4]['listsize']="5";
+$z[9]=Array("channel","\r\n                                        <li class=\"category-group\"><a href=\"[field:typeurl/]\" class=\"cat-item\"><span class=\"pull-left\"><i class=\"fa fa-angle-right\"></i>[field:typename/]</span></a></li>\r\n",4510,4756);
+$z[9][4]=array();
+$z[9][4]['type']="son";
+$z[10]=Array("arclist","\r\n                                        <div class=\"media feature-item\">\r\n                                            <div class=\"media-left feature-img\"><img src=\"[field:picname/]\" alt=\"[field:fulltitle/]\"/></div>\r\n                                            <div class=\"media-right media-middle feature-info\"><a href=\"[field:arcurl/]\" class=\"media-heading feature-title\">[field:title/]</a>\r\n\r\n                                                <div class=\"info\"><a href=\"[field:arcurl/]\" class=\"category\">栏目: <span> [field:typename/]</span></a></div>\r\n                                                <div class=\"info\"><a href=\"[field:arcurl/]\" class=\"date\">[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</a></div>\r\n                                            </div>\r\n                                        </div>\r\n                                       ",5187,6127);
+$z[10][4]=array();
+$z[10][4]['titlelen']="32";
+$z[10][4]['limit']="0,4";
+$z[10][4]['typeid']="3";
+$z[10][4]['infolen']="50";
+$z[11]=Array("include","",6757,6794);
+$z[11][4]=array();
+$z[11][4]['filename']="footer.htm";
+
+?>

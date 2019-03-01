@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font css-->
+    <link type="text/css" rel="stylesheet" href="/skin/font/font-icon/font-awesome-4.4.0/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="/skin/font/font-icon/font-svg/style.css">
+    <!-- Library css-->
+    <link type="text/css" rel="stylesheet" href="/skin/libs/bootstrap-3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/animate/animate.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/owl-carousel-2.0/assets/owl.carousel.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/selectbox/css/jquery.selectbox.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/range-slider/jquery.nstSlider.min.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/datetimepicker/css/bootstrap-datetimepicker.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/slick/slick.css">
+    <link type="text/css" rel="stylesheet" href="/skin/libs/slick/slick-theme.css">
+    <!-- style css-->
+    <link type="text/css" rel="stylesheet" href="/skin/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="/skin/css/components.css">
+    <link type="text/css" rel="stylesheet" href="/skin/css/responsive.css">
+</head>
+<body><!-- HEADER-->
+{dede:include filename="head.htm"/} 
+<!-- WRAPPER-->
+<div id="wrapper-content"><!-- PAGE WRAPPER-->
+    <div id="page-wrapper"><!-- MAIN CONTENT-->
+        <div class="main-content"><!-- CONTENT-->
+            <div class="content">
+                <div class="section page-title gallery bg-overlay">
+                    <div class="container">
+                        <div class="page-title-wrapper"><h2 class="captions">{dede:field name='typename'/}</h2>
+                            <ol class="breadcrumb">
+                                {dede:field name='position'/}
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="section gallery-content">
+                    <div class="container margin-top">
+                     <div class="gallery-nav">
+                            <div class="button-group filters-button-group">
+                                <div class="specific">
+                                {dede:channel type='son'}
+                                    <a href="[field:typeurl/]" class="btn btn-white-blue-2"><span>[field:typename/]</span></a>
+                                {/dede:channel} 
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row padding-top">
+                                    <div class="newest-properties-content">
+                                   {dede:list pagesize='9' titlelen='40' infolen='44'}
+                                        <div class="col-md-4 col-xs-6" style="margin-bottom:20px;">
+                                            <div class="sunhouse-item" style="width:370px;"><a href="[field:arcurl/]" class="wrapper-image"><img src="[field:picname/]" alt="[field:fulltitle/]" class="img-responsive layout-1"/><img src="/skin/images/skin.png" alt="[field:fulltitle/]" class="img-responsive layout-2"/>
+                                            </a>  
+                                            
+                                            </div>
+                                        </div>
+                                     {/dede:list} 
+                                    </div>
+                                </div>
+                       
+                        <div class="load-more" style="padding-top:30px;">
+                          <div class="dede_pages">
+			<ul class="pagelist">
+				 {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+			</ul>
+		</div><!-- /pages -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BUTTON BACK TO TOP-->
+    <div id="back-top"><a href="#top"><i class="fa fa-angle-double-up"></i></a></div>
+</div>
+<!-- FOOTER-->
+{dede:include filename="footer.htm"/} 
+<!--.body-2.loading<div class="dots-loader"></div>--><!-- JAVASCRIPT LIBS-->
+<script src="/skin/libs/jquery/jquery-2.1.4.min.js"></script>
+<script src="/skin/libs/detect/browser.js"></script>
+<script src="/skin/libs/moment/js/moment.min.js"></script>
+<script src="/skin/libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="/skin/libs/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="/skin/libs/smooth-scroll/jquery-smoothscroll.js"></script>
+<script src="/skin/libs/owl-carousel-2.0/owl.carousel.min.js"></script>
+<script src="/skin/libs/appear/jquery.appear.js"></script>
+<script src="/skin/libs/count-to/jquery.countTo.js"></script>
+<script src="/skin/libs/wow-js/wow.min.js"></script>
+<script src="/skin/libs/selectbox/js/jquery.selectbox-0.2.min.js"></script>
+<script src="/skin/libs/range-slider/jquery.nstSlider.min.js"></script>
+<script src="/skin/libs/parallax/jquery.data-parallax.min.js"></script>
+<script src="/skin/libs/slick/slick.min.js"></script>
+<!-- MAIN JS-->
+<script src="/skin/js/main.js"></script>
+<!-- LOADING SCRIPTS FOR PAGE--></body>
+</html>

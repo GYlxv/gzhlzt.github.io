@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<title>搜索结果页 - <?php echo $cfg_webname;?></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/skin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/interface-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/skin/css/{dede:global.color/}.css" rel="stylesheet" type="text/css" media="all" />
+       
+    </head>
+    <body class="scroll-assist" data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" data-reveal-timing="1000">
+        {dede:include filename="head.htm"/}
+        <div class="main-container transition--fade">
+            <section class="imagebg height-50">
+                <div class="background-image-holder background--bottom">
+                    <img alt="image" src="/skin/img/header2.jpg" />
+                </div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h1>搜索结果页</h1>
+                            <p class="lead"><?php echo $cfg_webname;?></p>
+                        </div>
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <section class="masonry-contained">
+                <div class="container">
+                    <div class="row">
+                        <div class="masonry">
+                            
+                            <div class="" style="margin-top:40px;">
+                            {dede:datalist}
+                            <?php
+$fields['stime'] = GetDateTimeMk($fields['senddate']);
+$fields['arcurl'] = GetArcUrl($fields['aid'],$fields['typeid'],$fields['senddate'],$fields['title'],$fields['ismake'],$fields['arcrank'],$fields['namerule'],$fields['typedir'],$fields['money']);
+$fields['typeurl'] = GetTypeUrl($fields['typeid'],MfTypedir($fields['typedir']),$fields['isdefault'],$fields['defaultname'],
+			$fields['ispart'],$fields['namerule2'],$fields['moresite'],$fields['siteurl'],$fields['sitepath']);
+?>
+                                <div class="col-sm-12 masonry__item" data-masonry-filter="digital">
+                                    <a href="{dede:field.arcurl/}">
+                                        <div class="card card--horizontal card-5">
+                                            
+                                            <div class="card__body  boxed boxed--lg bg--white ">
+                                                <div class="card__title">
+                                                    <h4>{dede:field.title/}</h4>
+                                                </div>
+                                                <span>
+                                                    <em>类别: <a href="{dede:field.typeurl/}" target="_blank">{dede:field.typename/}</a> {dede:field.stime/}</em>
+                                                </span>
+                                                <p>
+                                                 {dede:field.description1/}...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            {/dede:datalist}
+                            </div>
+                            <!--end masonry container-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                   <div class="spage cbox">
+	{dede:pagelist listsize='5'/}  
+</div>
+                </div>
+                <!--end of container-->
+            </section>
+        {dede:include filename="footer.htm"/}    
+       </div>
+        <script src="/skin/js/jquery-2.1.4.min.js"></script>
+        <script src="/skin/js/isotope.min.js"></script>
+        <script src="/skin/js/ytplayer.min.js"></script>
+        <script src="/skin/js/owl.carousel.min.js"></script>
+        <script src="/skin/js/lightbox.min.js"></script>
+        <script src="/skin/js/smooth-scroll.min.js"></script>
+        <script src="/skin/js/scrollreveal.min.js"></script>
+        <script src="/skin/js/parallax.js"></script>
+        <script src="/skin/js/scripts.js"></script>
+    </body>
+</html>
